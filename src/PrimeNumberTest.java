@@ -1,7 +1,7 @@
 public class PrimeNumberTest {
     public static void main(String[] args) {
 
-        boolean mark = true;
+        boolean mark = true;    //标识符
 
         for (int i = 2; i <= 1000; i++) {
             for (int j = 2; j < i; j++) {
@@ -12,7 +12,7 @@ public class PrimeNumberTest {
             if (mark == true) {
                 System.out.println(i);
             }
-            mark = true;
+            mark = true;        //重置mark值
         }
     }
 }
