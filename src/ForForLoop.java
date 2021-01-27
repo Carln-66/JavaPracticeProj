@@ -3,7 +3,7 @@ public class ForForLoop {
 
 
             //外层循环控制行数
-            //内存循环控制列数
+            //内层循环控制列数
 
             for (int i = 0; i < 5; i++) {
                 for (int j = 0; j < 4 - i; j++) {
