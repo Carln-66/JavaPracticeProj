@@ -1,4 +1,4 @@
-package AccountAndCustomOpti;
+package account.and.custom.optimz;
 
 public class BankTest {
 
