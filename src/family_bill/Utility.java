@@ -1,4 +1,4 @@
-package FamilyBill;
+package family_bill;
 
 import java.util.Scanner;
 /**
