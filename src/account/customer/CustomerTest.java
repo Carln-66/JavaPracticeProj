@@ -1,4 +1,4 @@
-package AccountCustomer;
+package account.customer;
 
 public class CustomerTest {
 
