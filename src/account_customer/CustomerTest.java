@@ -1,4 +1,4 @@
-package account.customer;
+package account_customer;
 
 public class CustomerTest {
 
