@@ -2,32 +2,38 @@ package customer_management.service;
 
 import customer_management.bean.Customer;
 
+/**
+ * @Auther: Carl
+ * @Date: 2021/01/29/20:34
+ * @Description:
+ */
+
+
 public class CustomerList {
 
-    private final Customer[] customers;
+    private Customer[] customers;
     private int total;
 
     /**
-     * @Description: 初始化customers数组
-     * @Param: [totalCustomer]
-     * @return:
-     * @Author: Carl
-     * @Date: 2021/1/29 12:57
-     */
-    public CustomerList(int totalCustomer) {
-        customers = new Customer[totalCustomer];
-
+    * @Description: 数组初始化
+    * @Param: [maxNum]
+    * @return:
+    * @Author: Carl
+    * @Date: 2021/1/29 20:47
+    */
+    public CustomerList(int maxNum){
+        customers = new Customer[maxNum];
     }
 
     /**
-     * @Description: 添加客户
-     * @Param: [customer]
-     * @return: boolean; true: 添加成功; false: 添加失败
-     * @Author: Carl
-     * @Date: 2021/1/29 12:58
-     */
-    public boolean addCustomer(Customer customer) {
-        if (total >= customers.length) {
+    * @Description: 增加用户信息
+    * @Param: [customer]
+    * @return:
+    * @Author: Carl
+    * @Date: 2021/1/29 20:47
+    */
+    public boolean addCustomer(Customer customer){
+        if (total >= customers.length){
             return false;
         }
         customers[total] = customer;
@@ -36,77 +42,76 @@ public class CustomerList {
     }
 
     /**
-     * @Description: 替换客户
-     * @Param: [index, cust]
-     * @return: boolean; true: 替换成功; false: 替换失败
-     * @Author: Carl
-     * @Date: 2021/1/29 13:01
-     */
-    public boolean replaceCustomer(int index, Customer cust) {
-        if (index < 0 || index >= total) {
+    * @Description: 修改用户信息
+    * @Param: []
+    * @return:
+    * @Author: Carl
+    * @Date: 2021/1/29 20:47
+    */
+    public boolean modifiedCustomer(int index, Customer customer){
+        if (index < 0 || index >= total){
             return false;
         }
-        customers[index] = cust;
+        customers[index] = customer;
         return true;
     }
 
     /**
-     * @Description: 删除用户信息
-     * @Param: [index]
-     * @return:
-     * @Author: Carl
-     * @Date: 2021/1/29 14:55
-     */
-    public boolean deleteCustomer(int index) {
-        if (index < 0 || index >= total) {
+    * @Description: 删除用户信息
+    * @Param: [index]
+    * @return: 
+    * @Author: Carl
+    * @Date: 2021/1/29 21:07
+    */
+    public boolean deleteCustomer(int index){
+        if (index < 0 || index >= total - 1){
             return false;
         }
-        for (int i = index; i < total - 1; i++) {
-            customers[i] = customers[i + 1];
+        for (int i = index; i < index - 1; i++){
+            customers[i] = customers[i+1];
         }
-        customers[total + 1] = null;
-        total--;
+        customers[total+1] = null;
+        index--;
         return true;
     }
-
+    
     /**
-     * @Description: 获取所有用户信息的数组
-     * @Param: []
-     * @return: 数组
-     * @Author: Carl
-     * @Date: 2021/1/29 13:07
-     */
-    public Customer[] getAllCustomers() {
-        Customer[] cust = new Customer[total];
-        for (int i = 0; i < cust.length; i++) {
+    * @Description: 列举全部用户信息
+    * @Param: []
+    * @return: 
+    * @Author: Carl
+    * @Date: 2021/1/29 21:07
+    */
+    public Customer[] getAllCustomers(){
+        Customer[] cust = new Customer[total];      //将所有信息赋到一个长度为total的数组中去
+        for (int i = 0; i < total; i++){
             cust[i] = customers[i];
         }
         return cust;
     }
 
     /**
-     * @Description: 获取指定索引位置的用户信息
-     * @Param: [index]
-     * @return: 数组
-     * @Author: Carl
-     * @Date: 2021/1/29 13:10
-     */
-    public Customer getCustomer(int index) {
-        if (index < 0 || index >= total) {
+    * @Description: 获取指定索引位置的客户信息
+    * @Param: [index]
+    * @return:
+    * @Author: Carl
+    * @Date: 2021/1/29 21:19
+    */
+    public Customer getCustomer(int index){
+        if (index < 0 || index >= total){
             return null;
         }
         return customers[index];
     }
 
     /**
-     * @Description: 获取当前用户数量
-     * @Param: []
-     * @return: int
-     * @Author: Carl
-     * @Date: 2021/1/29 13:11
-     */
-    public int getTotal() {
-        return total;
+    * @Description: 返回全部用户数量
+    * @Param: []
+    * @return: 
+    * @Author: Carl
+    * @Date: 2021/1/29 21:07
+    */
+    public int getTotal(){
+        return getTotal();
     }
-
 }
