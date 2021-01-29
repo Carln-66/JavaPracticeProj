@@ -17,7 +17,7 @@ public class StartChessJFrame extends JFrame {
     private JMenuItem startMenuItem,exitMenuItem,backMenuItem;
     //重新开始，退出，和悔棋菜单项
     public StartChessJFrame(){
-        setTitle("单机版五子棋");//设置标题
+        setTitle("刘梦熙的五子棋盘");//设置标题
         chessBoard=new ChessBoard();
 
 
