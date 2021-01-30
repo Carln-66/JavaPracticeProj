@@ -1,5 +1,10 @@
-package account_customer;
+package account;
 
+/**
+ * @Auther: Carl
+ * @Date: 2021/01/30/21:36
+ * @Description:
+ */
 public class Account {
 
     private int id;
@@ -36,20 +41,24 @@ public class Account {
         this.annualInterestRate = annualInterestRate;
     }
 
-    public void withDraw(double amount) {
-        if (balance > amount) {
-            balance -= amount;
-            System.out.println("成功取出" + amount);
-            return;
-        }
-        System.out.println("余额不足，取款失败。");
+    public double getMonthlyInterest(){
+        return annualInterestRate / 12;
     }
 
-    public void deposit(double amount){
+    public void withdraw(double amount){
+        if (balance >= amount ){
+            balance -= amount;
+            return;
+        }
+        System.out.println("余额不足");
+    }
+
+    public void deposit (double amount){
         if (amount > 0){
             balance += amount;
-            System.out.println("存款成功，存入" + amount);
+            return;
         }
+        System.out.println("存钱成功");
     }
 
 }
