@@ -15,23 +15,23 @@ public class CustomerList {
     private int total;
 
     /**
-    * @Description: 数组初始化
-    * @Param: [maxNum]
-    * @return:
-    * @Author: Carl
-    * @Date: 2021/1/29 20:47
-    */
+     * @Description: 数组初始化
+     * @Param: [maxNum]
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 20:47
+     */
     public CustomerList(int maxNum){
         customers = new Customer[maxNum];
     }
 
     /**
-    * @Description: 增加用户信息
-    * @Param: [customer]
-    * @return:
-    * @Author: Carl
-    * @Date: 2021/1/29 20:47
-    */
+     * @Description: 增加用户信息
+     * @Param: [customer]
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 20:47
+     */
     public boolean addCustomer(Customer customer){
         if (total >= customers.length){
             return false;
@@ -42,12 +42,12 @@ public class CustomerList {
     }
 
     /**
-    * @Description: 修改用户信息
-    * @Param: []
-    * @return:
-    * @Author: Carl
-    * @Date: 2021/1/29 20:47
-    */
+     * @Description: 修改用户信息
+     * @Param: []
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 20:47
+     */
     public boolean modifiedCustomer(int index, Customer customer){
         if (index < 0 || index >= total){
             return false;
@@ -57,12 +57,12 @@ public class CustomerList {
     }
 
     /**
-    * @Description: 删除用户信息
-    * @Param: [index]
-    * @return: 
-    * @Author: Carl
-    * @Date: 2021/1/29 21:07
-    */
+     * @Description: 删除用户信息
+     * @Param: [index]
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 21:07
+     */
     public boolean deleteCustomer(int index){
         if (index < 0 || index >= total - 1){
             return false;
@@ -74,14 +74,14 @@ public class CustomerList {
         index--;
         return true;
     }
-    
+
     /**
-    * @Description: 列举全部用户信息
-    * @Param: []
-    * @return: 
-    * @Author: Carl
-    * @Date: 2021/1/29 21:07
-    */
+     * @Description: 列举全部用户信息
+     * @Param: []
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 21:07
+     */
     public Customer[] getAllCustomers(){
         Customer[] cust = new Customer[total];      //将所有信息赋到一个长度为total的数组中去
         for (int i = 0; i < total; i++){
@@ -91,12 +91,12 @@ public class CustomerList {
     }
 
     /**
-    * @Description: 获取指定索引位置的客户信息
-    * @Param: [index]
-    * @return:
-    * @Author: Carl
-    * @Date: 2021/1/29 21:19
-    */
+     * @Description: 获取指定索引位置的客户信息
+     * @Param: [index]
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 21:19
+     */
     public Customer getCustomer(int index){
         if (index < 0 || index >= total){
             return null;
@@ -105,13 +105,13 @@ public class CustomerList {
     }
 
     /**
-    * @Description: 返回全部用户数量
-    * @Param: []
-    * @return: 
-    * @Author: Carl
-    * @Date: 2021/1/29 21:07
-    */
+     * @Description: 返回全部用户数量
+     * @Param: []
+     * @return:
+     * @Author: Carl
+     * @Date: 2021/1/29 21:07
+     */
     public int getTotal(){
-        return getTotal();
+        return total;
     }
 }
