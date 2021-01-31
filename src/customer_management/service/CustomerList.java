@@ -64,14 +64,13 @@ public class CustomerList {
      * @Date: 2021/1/29 21:07
      */
     public boolean deleteCustomer(int index){
-        if (index < 0 || index >= total - 1){
+        if (index < 0 || index >= total){
             return false;
         }
-        for (int i = index; i < index - 1; i++){
+        for (int i = index; i < total - 1; i++){
             customers[i] = customers[i+1];
         }
-        customers[total+1] = null;
-        index--;
+        customers[--total] = null;
         return true;
     }
 

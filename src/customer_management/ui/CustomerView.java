@@ -15,7 +15,7 @@ public class CustomerView {
     private final CustomerList customers = new CustomerList(10);
 
     public CustomerView() {
-        Customer cust = new Customer("贺梓毓", '男', 30, "010-56253825",
+        Customer cust = new Customer("张三", '男', 30, "010-56253825",
                 "abc@email.com");
         customers.addCustomer(cust);
     }
