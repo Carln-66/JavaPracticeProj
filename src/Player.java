@@ -4,12 +4,9 @@
  * @Description: 创建一个球员类，并且该类最多只允许创建十一个对象。
  */
 public class Player {
-    private int id;
-    private static int init = 100;
     private static int sum;     //当前总人数
 
     public Player(){
-        id = init++;
         System.out.println("创建一个新球员");
     }
 
