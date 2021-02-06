@@ -7,7 +7,7 @@ public class Player {
     private static int sum;     //当前总人数
 
     public Player(){
-        System.out.println("创建一个新球员");
+        System.out.println("创建一个新球9员");
     }
 
     public static Player creatPlayer(){
