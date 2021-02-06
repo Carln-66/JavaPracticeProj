@@ -1,7 +1,6 @@
 package singleton;
 
 import com.sun.org.apache.xpath.internal.operations.Or;
-import org.junit.runner.manipulation.Orderable;
 
 /**
  * @Auther: Carl
