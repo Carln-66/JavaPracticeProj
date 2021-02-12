@@ -1,13 +1,11 @@
 package TreeSetTest;
 
-import java.time.LocalDate;
-
 /**
  * @Auther: Carl
  * @Date: 2021/02/12/15:31
  * @Description:
  */
-public class MyDate {
+public class MyDate implements Comparable {
     private int year;
     private int month;
     private int day;
@@ -47,10 +45,31 @@ public class MyDate {
 
     @Override
     public String toString() {
-        return "MyDate{" +
-                "year=" + year +
-                ", month=" + month +
-                ", day=" + day +
-                '}';
+        return year + "年" + month + "月" + day + "日";
+    }
+
+    @Override
+    public int compareTo(Object o) {
+
+        Employee employee1 = new Employee();
+        Employee employee2 = new Employee();
+
+        if (o instanceof MyDate) {
+            MyDate myDate = (MyDate) o;
+
+            int minusYear = this.getYear() - myDate.getYear();
+            if (minusYear != 0) {
+                return minusYear;
+            } else {
+                int minusMonth = this.getMonth() - myDate.getMonth();
+                if (minusMonth != 0) {
+                    return minusMonth;
+                }
+                return this.day - myDate.day;
+            }
+        } else {
+            throw new RuntimeException("输入数据类型不匹配");
+        }
     }
 }
+
