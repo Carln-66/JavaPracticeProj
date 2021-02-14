@@ -1,4 +1,4 @@
-package AppleTest;
+package apple_test;
 
 /**
  * @Auther: Carl

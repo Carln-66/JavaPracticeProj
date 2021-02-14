@@ -1,4 +1,4 @@
-package DAOTest;
+package dao_test;
 
 import java.util.Objects;
 
