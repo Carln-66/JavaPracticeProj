@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Account/Account.iml" filepath="$PROJECT_DIR$/Account/Account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AccountCustomerOptimize/AccountCustomerOptimize.iml" filepath="$PROJECT_DIR$/AccountCustomerOptimize/AccountCustomerOptimize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomerManagement/CustomerManagement.iml" filepath="$PROJECT_DIR$/CustomerManagement/CustomerManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Employee/Employee.iml" filepath="$PROJECT_DIR$/Employee/Employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exception/Exception.iml" filepath="$PROJECT_DIR$/Exception/Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FamilyBill/FamilyBill.iml" filepath="$PROJECT_DIR$/FamilyBill/FamilyBill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeneralTest/GeneralTest.iml" filepath="$PROJECT_DIR$/GeneralTest/GeneralTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericTest/GenericTest.iml" filepath="$PROJECT_DIR$/GenericTest/GenericTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeometricObject/GeometricObject.iml" filepath="$PROJECT_DIR$/GeometricObject/GeometricObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gobang/Gobang.iml" filepath="$PROJECT_DIR$/Gobang/Gobang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO/IO.iml" filepath="$PROJECT_DIR$/IO/IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" filepath="$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaPracticePrj.iml" filepath="$PROJECT_DIR$/JavaPracticePrj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Person/Person.iml" filepath="$PROJECT_DIR$/Person/Person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreeSetTest/TreeSetTest.iml" filepath="$PROJECT_DIR$/TreeSetTest/TreeSetTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vehicle/Vehicle.iml" filepath="$PROJECT_DIR$/Vehicle/Vehicle.iml" />
+    </modules>
+  </component>
+</project>
